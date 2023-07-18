@@ -368,7 +368,7 @@ aside p {
   font-size: 16px;
 }
 
-/* Responsive */
+/* Tablet Responsive */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .container {
@@ -417,6 +417,102 @@ aside p {
 
   .result-box .result p:last-child {
     width: 92%;
+    background-color: rgb(0, 162, 255);
+    color: white;
+  }
+
+  .result-box .disease1 ol,
+  .result-box .disease2 ol {
+    line-height: 1.5em;
+    font-size: 19px;
+    list-style: none;
+  }
+
+  .result-box .calculation-result,
+  .result-box .disease1,
+  .result-box .disease2 {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 3.7em;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #2f1e84 0%, #5d63ed 100%);
+  }
+
+  .result-box .btn-bawah {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  .download {
+    display: flex;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 2rem;
+  }
+
+  .download-apps img {
+    margin: 10px 3px;
+    width: 39%;
+    cursor: pointer;
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  #hero {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #description {
+    width: 100%;
+    font-size: 12px;
+    margin: 50px 0;
+  }
+
+  .left-column {
+    order: initial;
+    padding: 1rem;
+    margin-bottom: -50px;
+    flex: 1;
+  }
+
+  .right-column {
+    margin: auto;
+    padding: 20px;
+  }
+
+  .result-box {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+  }
+
+  .calculation-box .form {
+    margin: 5px;
+    padding: 1rem;
+    font-size: 15px;
+  }
+
+  .result-box p:first-child {
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(0, 162, 255);
+  }
+
+  .result-box .result p:last-child {
+    width: 90%;
     background-color: rgb(0, 162, 255);
     color: white;
   }

@@ -157,6 +157,16 @@ input[type="text"] {
 input[type="text"]:focus {
   border: 3px solid #2f1e84;
 }
+.input-box.error {
+  border: 2px solid red;
+}
+
+.error {
+  color: #ff0000;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 15px;
+}
 
 .btn-yll {
   background-color: #f1c232;
@@ -337,7 +347,8 @@ aside {
   position: absolute;
   width: 39%;
   height: 395px;
-  margin: 44em 4em;
+  margin: -15px 50px;
+  align-items: left;
   color: #fff;
 }
 
@@ -437,7 +448,7 @@ aside p {
   .download {
     display: flex;
     font-weight: 600;
-    margin: 15px;
+    margin-top: 20px;
     padding: 2rem;
   }
 
@@ -448,26 +459,6 @@ aside p {
   }
 
   aside {
-    justify-content: center;
-    width: 75%;
-    position: relative;
-    font-size: 1px;
-    text-align: left;
-    margin-top: -50px;
-    margin-left: 3.5rem;
-    height: 250px;
-  }
-
-  aside h4 {
-    font-size: 15px;
-  }
-
-  aside > ol > li {
-    font-size: 10px;
-  }
-
-  aside p {
-    font-size: 10px;
-    text-align: left;
+    display: none;
   }
 }
